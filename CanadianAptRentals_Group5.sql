@@ -25,21 +25,21 @@ CREATE TABLE Apartment(
 	CONSTRAINT BuildingID_FK FOREIGN KEY(BuildingID) REFERENCES Building(BuildingID)
 );
 INSERT INTO Apartment (ApartmentID, BuildingID, ApartmentType, Rent, Availability) 
-VALUES 	(1,  1, 'Studio', 	800, 	1),
+VALUES 	(1,  1, 'Studio', 	800, 	9),
 		(2,  1, '1BHK',  	1200, 	1),
-		(3,  1, '2BHK', 	1600, 	0),
-		(4,  2, 'Studio', 	750, 	1),
-		(5,  2, '1BHK', 	1100, 	1),
-		(6,  2, '2BHK', 	1500, 	0),
-		(7,  3, 'Studio', 	700, 	1),
-		(8,  3, '1BHK', 	1000,	1),
-		(9,  3, '2BHK', 	1400, 	1),
-		(10, 4, 'Studio', 	800, 	0),
-		(11, 4, '1BHK', 	1150, 	1),
+		(3,  1, '2BHK', 	1600, 	7),
+		(4,  2, 'Studio', 	750, 	3),
+		(5,  2, '1BHK', 	1100, 	9),
+		(6,  2, '2BHK', 	1500, 	9),
+		(7,  3, 'Studio', 	700, 	6),
+		(8,  3, '1BHK', 	1000,	7),
+		(9,  3, '2BHK', 	1400, 	8),
+		(10, 4, 'Studio', 	800, 	3),
+		(11, 4, '1BHK', 	1150, 	2),
 		(12, 4, '2BHK', 	1700, 	0),
-		(13, 5, 'Studio', 	850, 	1),
-		(14, 5, '1BHK', 	1250, 	1),
-		(15, 5, '2BHK', 	1800, 	0);
+		(13, 5, 'Studio', 	850, 	4),
+		(14, 5, '1BHK', 	1250, 	5),
+		(15, 5, '2BHK', 	1800, 	2);
 
 DROP TABLE IF EXISTS Guest;
 CREATE TABLE Guest(
