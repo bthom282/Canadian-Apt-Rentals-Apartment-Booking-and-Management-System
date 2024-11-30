@@ -1,5 +1,8 @@
-/* 1.) */
-
+/* 1.) Assuming BuildingID = 2 */
+SELECT *
+FROM Apartment
+WHERE BuildingID = 2
+ORDER BY ApartmentType;
 
 /* 2.) */
 
@@ -19,7 +22,7 @@ GROUP BY b.BuildingID;
 /* 5.) */
 SELECT g.Name AS Name, COUNT(b.GuestID) AS Bookings
 FROM Guest AS g, Booking AS b
-WHERE g.GuestID = b.GuestID 	/* Make sure WHERE clause is included otherwise Bookings will display 20 as in the number of inserted values */
+WHERE g.GuestID = b.GuestID
 GROUP BY Name
 HAVING Bookings > 2;
 
