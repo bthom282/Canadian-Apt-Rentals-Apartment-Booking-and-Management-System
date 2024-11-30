@@ -75,7 +75,7 @@ CREATE TABLE Booking(
 INSERT INTO Booking (BookingID, GuestID, ApartmentID, StartTime, EndTime, Status, Cost) 
 VALUES	(1,  1,  2,  '2024-12-01', '2024-12-10', 'Confirmed', 1200),
 		(2,  2,  3,  '2024-11-15', '2024-11-20', 'Completed', 800),
-		(3,  3,  5,  '2024-12-01', '2024-12-07', 'Confirmed', 1100),
+		(3,  3,  1,  '2024-12-01', '2024-12-07', 'Confirmed', 1100),
 		(4,  4,  8,  '2024-12-05', '2024-12-12', 'Cancelled', 1000),
 		(5,  5,  9,  '2024-11-20', '2024-11-30', 'Completed', 1400),
 		(6,  6,  11, '2024-12-03', '2024-12-10', 'Confirmed', 1150),
